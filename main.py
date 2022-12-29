@@ -31,8 +31,6 @@ def generate_password():
     if generate_button_counter > 1:
         password_entry.delete(0, END)
         password_entry.insert(0, final_password)
-
-
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def save():
@@ -80,7 +78,6 @@ def find_password():
                                                               f"Password: {web_dict[website_search]['password']}")
         else:
             messagebox.showwarning(title="Invalid Website", message=f" Website: {website_search} not in data file.")
-
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Red Lock Password Manager")
